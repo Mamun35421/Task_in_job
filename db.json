@@ -2,8 +2,49 @@
   "candidatelisting": [
     {
       "id": 1,
-      "name": "Mamun Or Rashid",
+      "name": "Mamun Ahmed",
       "sector": "Fullstack Developer"
+    },
+    {
+      "name": "Faisal Mahmud",
+      "sector": "Fullstack Developer",
+      "active": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Sakib",
+      "sector": "Fullstack Developer"
+    },
+    {
+      "name": "Massud Rana",
+      "sector": "Fullstack Developer",
+      "active": true,
+      "id": 4
+    },
+    {
+      "name": "Somaya Ather",
+      "sector": "Back-end Developer",
+      "active": true,
+      "id": 5
+    },
+    {
+      "name": "Joule ",
+      "sector": "Back-end Developer",
+      "active": true,
+      "id": 6
+    },
+    {
+      "name": "Siala Begum",
+      "sector": "Fullstack Developer",
+      "active": true,
+      "id": 7
+    },
+    {
+      "name": "Maimona ",
+      "sector": "Fullstack Developer",
+      "active": true,
+      "id": 8
     }
   ]
 }

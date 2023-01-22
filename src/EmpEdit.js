@@ -7,7 +7,7 @@ const EmpEdit = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:8000/candidatelisting/" + empid)
+        fetch("http://localhost:8000/candidatelisting/" +empid)
         .then((res) => {
             return res.json();
         }).then((resp) => {
