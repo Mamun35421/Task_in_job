@@ -7,7 +7,8 @@ const EmpEdit = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:8000/candidatelisting/" + empid).then((res) => {
+        fetch("http://localhost:8000/candidatelisting/" + empid)
+        .then((res) => {
             return res.json();
         }).then((resp) => {
             idchange(resp.id);
@@ -31,15 +32,15 @@ const EmpEdit = () => {
 
     const handlesubmit=(e)=>{
       e.preventDefault();
-      const empdata={id,name,active};
+      const empdata={id,name,sector,active};
       
 
-      fetch("http://localhost:8000/candidatelisting"+empid,{
+      fetch("http://localhost:8000/candidatelisting/"+empid,{
         method:"PUT",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
       }).then((res)=>{
-        alert('Saved successfully.')
+        alert('Successfully Edit.')
         navigate('/');
       }).catch((err)=>{
         console.log(err.message)
@@ -77,11 +78,19 @@ const EmpEdit = () => {
                                 </div>
 
                                 <div className="col-lg-12">
-                                    <div className="form-group">
-                                        <label>Sector</label>
-                                        <input value={sector} onChange={e=>sectorchange(e.target.value)} className="form-control"></input>
+                                        <div className="form-group">
+                                            <label>Sector</label>
+                                        
+                                    <select class="form-select" value={sector}  onChange={e=>sectorchange(e.target.value)} className="form-control" >
+                                       <option selected>Select Your Sector</option>
+                                       <option>Front-end Developer</option>
+                                       <option>Back-end Developer</option>
+                                       <option>Fullstack Developer</option>
+                                    </select>
+
+                                       
+                                        </div>
                                     </div>
-                                </div>
 
                     
 

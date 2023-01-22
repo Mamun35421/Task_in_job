@@ -67,10 +67,10 @@ const EmpCreate = () => {
                                         <div className="form-group">
                                             <label>Sector</label>
                                         
-                                    <select class="form-select" value={sector}  onChange={e=>sectorchange(e.target.value)} className="form-control">
+                                    <select  value={sector}  onChange={e=>sectorchange(e.target.value)} className="form-control">
                                        <option selected>Select Your Sector</option>
-                                       <option>Front end Developer</option>
-                                       <option>Back end Developer</option>
+                                       <option>Front-end Developer</option>
+                                       <option>Back-end Developer</option>
                                        <option>Fullstack Developer</option>
                                     </select>
 
