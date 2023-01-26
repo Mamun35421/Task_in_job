@@ -9,7 +9,7 @@ const EmpListing = () => {
     }
     
     useEffect(() => {
-        fetch("http://localhost:8000/candidatelisting").then((res) => {
+        fetch("https://jsonplaceholder.typicode.com/users").then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);

@@ -7,7 +7,7 @@ const EmpEdit = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:8000/candidatelisting/" +empid)
+        fetch("https://jsonplaceholder.typicode.com/users" +empid)
         .then((res) => {
             return res.json();
         }).then((resp) => {

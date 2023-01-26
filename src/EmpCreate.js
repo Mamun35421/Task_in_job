@@ -18,7 +18,7 @@ const EmpCreate = () => {
       const empdata={name,sector,active};
       
 
-      fetch("  http://localhost:8000/candidatelisting",{
+      fetch("https://jsonplaceholder.typicode.com/users",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
